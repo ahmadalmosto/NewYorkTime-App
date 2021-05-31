@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  /* text-align: center;
+ 
+  display: flex;
+  flex-direction: column; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+}
+
+a{
+  cursor: pointer;  
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+a:hover {
+    background-color: #555;
+  }
+  
+  a:active {
+    background-color: black;
+  }
+  
+  a:visited {
+    background-color: #ccc;
+  }
+
+
+
+

@@ -1,0 +1,129 @@
+.searchCo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.searchSpinner{
+    align-items: center;
+}
+.searchDiv{
+
+    /* margin: 20px; */
+    justify-content: center;
+    display: flex
+} 
+.searchErr{
+  display: flex;
+flex-direction: column;
+  height: 150px;
+  width: 50%;
+  border: 1px solid red;
+  margin-left: 50%;
+  transform: translate(-50% , -50%);
+  margin-top: 10%;
+  /* justify-content: center; */
+  align-items: center;
+  
+}
+.ErrPara{
+height: 100%;
+width: 100%;
+  color: red;
+  margin-left: 50%;
+  /* transform: translate(-50% , -50%); */
+
+}
+.searchDiv::before , ::after{
+box-sizing: inherit;
+}
+.searchInput{
+    /* border: 1px solid #3487f7;;
+    padding: 5px;
+    outline: none;
+    color: #3487f7;
+    border-radius: 5px;
+    height: 20px; */
+    /* width: 50%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF; */
+
+}
+/* .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  } */
+
+  form {
+    position: relative;
+    width: 30rem;
+    background: #3487f7;
+    border-radius: .7rem;
+    margin: 20px ;
+  }
+  input, .formButton {
+    height: 2rem;
+    font-family: 'Lato' , sans-serif;
+    border: 0;
+    color: #2f2f2f;
+    font-size: .7rem;
+  }
+  input[type="search"] {
+    outline: 0; 
+    width: 100%;
+    background:  #fff;
+    padding: 0 1.6rem;
+    border-radius: 10%;
+    border-top: 1px solid #3487f7;
+    border-bottom: 1px solid #3487f7;
+    appearance: none;
+    transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+    transition-property: width, border-radius;
+    z-index: 1;
+    position: relative;
+  }
+  .formButton {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    font-weight: bold;
+    /* color: tomato; */
+    background: #3487f7;
+    color: white;
+    border-radius: 0 .7rem .7rem 0;
+    border-radius: .7rem 0 0 .7rem;
+    /* width: calc(100% - 6rem); */
+    display: block;
+  }
+  input:not(:placeholder-shown) {
+    border-radius: .7rem 0 0 .7rem;
+    width: calc(100% - 6rem);
+    display: block;
+}
+
+  
+  
+  label {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }

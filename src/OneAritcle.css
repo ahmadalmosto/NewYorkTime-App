@@ -1,0 +1,144 @@
+
+.column{
+margin: 40px 20% 0 20%;   
+justify-content: center;
+}
+.cardAr{
+    text-align: center;
+    flex-direction: column;
+  padding: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+width: 100%; 
+margin-bottom: 50px;
+}
+.most{
+  margin-left: 25px;
+ /* align-items: baseline; */
+  color: #3487f7;
+  
+}
+
+ h5
+ {
+   margin:0px;
+   font-size:1.4em;
+   font-weight:700;
+ }
+ 
+ p
+ {
+   font-size:12px;
+ }
+ 
+ .center
+ {
+   height:100vh;
+   width:100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .property-card
+ {
+   height:28em;
+   width:24em;
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-orient:vertical;
+   -webkit-box-direction:normal;
+   -ms-flex-direction:column;
+   flex-direction:column;
+   position:relative;
+   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   border-radius:16px;
+   overflow:hidden;
+   -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+   box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+ }
+ 
+ .property-image
+ {
+   height:16em;
+   width:24em;
+   padding:1em 2em;
+   position:Absolute;
+   top:0px;
+   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   background-size:cover;
+   background-repeat:no-repeat;
+ }
+ .property-description
+ {
+   background-color: #FAFAFC;
+   height:12em;
+   width:24em;
+   position:absolute;
+   bottom:0em;
+   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   padding: 0.5em 1em;
+   text-align:center;
+ }
+ 
+ /* Social Icons */
+ 
+ .deletelink
+ {
+ 
+   position:absolute;
+   bottom:1em;
+   left:1em;
+  
+ }
+ 
+ /* Property Cards Hover States */
+ 
+ .property-card:hover .property-description
+ {
+   height:0em;
+   padding:0px 1em;
+ }
+ .property-card:hover .property-image
+ {
+   height:28em;
+ }
+ 
+ .property-card:hover 
+ {
+   background-color:white;
+ }
+ 
+ .property-card:hover
+ {
+   background-color:blue;
+   cursor:pointer;
+ }
+ 
+ 
+ 
+ 
+ .property-image-title
+ {
+ text-align:center;
+ position:Relative;
+ top:15%;
+ opacity:0;
+ transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+ color:#f1f1f1;
+ font-size:1.2em;
+ }
+ 
+ .property-card:hover .property-image-title
+ {
+ opacity:1;
+ color: aqua
+ }
+ 
