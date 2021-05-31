@@ -2,8 +2,7 @@ import React from 'react'
 import { css } from "@emotion/react";
 import SyncLoader from "react-spinners/SyncLoader";
 
-
- function Spinner({loading}) {
+function Spinner({ loading }) {
     const override = css`
     // display: block;
     margin: 10 10 10 10;

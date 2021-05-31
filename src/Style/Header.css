@@ -1,6 +1,6 @@
 .head{
   display: flex;
-  /* flex-direction: row; */
   justify-content: center;
   margin: 15px;
+  height: 300px;
 }

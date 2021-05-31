@@ -15,9 +15,7 @@ margin-bottom: 50px;
 }
 .most{
   margin-left: 25px;
- /* align-items: baseline; */
   color: #3487f7;
-  
 }
 
  h5
@@ -88,18 +86,13 @@ margin-bottom: 50px;
    text-align:center;
  }
  
- /* Social Icons */
- 
  .deletelink
  {
  
    position:absolute;
    bottom:1em;
    left:1em;
-  
  }
- 
- /* Property Cards Hover States */
  
  .property-card:hover .property-description
  {
@@ -121,9 +114,6 @@ margin-bottom: 50px;
    background-color:blue;
    cursor:pointer;
  }
- 
- 
- 
  
  .property-image-title
  {

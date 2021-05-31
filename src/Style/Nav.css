@@ -1,0 +1,12 @@
+.bigCon{
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width: 50vw;
+
+}
+.right{
+    width: 50vw;
+    display: flex;
+}

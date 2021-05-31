@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Modal from './Modal'
-import './OneAritcle.css'
+import './Style/OneAritcle.css'
 
 export default function OneAritcle({ article }) {
     const [lastArticle, setLastArticle] = useState([])
@@ -11,12 +11,10 @@ export default function OneAritcle({ article }) {
         const filtered = article.filter((one) => { return one.id === id })
         setLastArticle(filtered)
         setIsOpen(true)
-        console.log(isOpen)
     };
     return (
- 
         <>
-        <h4 className="most">Most Readed...</h4>
+            <h4 className="most">Most Readed...</h4>
             {article.map((one) => {
                 return (
                     <div key={one.id} className="wrap">
@@ -38,7 +36,6 @@ export default function OneAritcle({ article }) {
                             <a href={lastArticle[0].url}>
                                 <div className="property-image" style={{ backgroundImage: `url(${lastArticle[0].media[0]["media-metadata"][2].url})` }}>
                                     <div className="property-image-title">
-
                                         {lastArticle[0].title}...>>
                                     </div>
                                 </div></a>
@@ -47,7 +44,6 @@ export default function OneAritcle({ article }) {
                                 <h5>{lastArticle[0].byline}</h5>
                                 <p>{lastArticle[0].published_date}</p>
                             </div>
-
                             <div className=" deletelink">
                                 <button onClick={() => setIsOpen(false)}>X</button>
 

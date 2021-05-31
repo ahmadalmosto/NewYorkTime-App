@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "./Review.css"
+import "./Style/Review.css"
 import Spinner from "./Spinner"
 
 export default function Review({ match }) {
   const id = match.params.id;
+   const api_key = process.env.REACT_APP_API_KEY
   const [loading, setLoading] = useState(false)
   const [isError, setIsError] = useState({ status: false, text: "Error 404" })
   const [bookReview, setBookReview] = useState([]);
-  const url = `https://api.nytimes.com/svc/books/v3/reviews.json?isbn=${id}&api-key=hQDkXe5sQVHgTHMgHrVG9xJyxWcRoJkZ`;
+  const url = `https://api.nytimes.com/svc/books/v3/reviews.json?isbn=${id}&api-key=${api_key}`;
   function fetchReview() {
-    fetch(url)
     setLoading(true)
+    fetch(url)
       .then((res) => {
         if (res.status !== "OK") setIsError({ status: true, text: "Error 404" })
         return res.json();

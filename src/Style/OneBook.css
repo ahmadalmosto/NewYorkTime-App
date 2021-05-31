@@ -2,8 +2,6 @@
   background-color: transparent;
   width: 333px;
   height: 300px;
-  /* border: 1px solid #f1f1f1; */
-  /* perspective: 1000px;  */
   display: flex;
   margin-top: 35px;
 
@@ -13,12 +11,9 @@
 }
 .onecard{
   margin: 8px;
-  /* height: 100%; */
-  /* display: flex; */
-  /* justify-content: center; */
  
 }
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -45,27 +40,20 @@
   background-color: #bbb;
   color: black;
 }
-
-/* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
 }
-
-
 .link {
   height: 30px;
   align-items: center;
   justify-content: center;
-  /* color: #000; */
   text-decoration: none;
   display: flex;
   color: #f1f1f1;
   margin-top: 15px;
 }
-
-
 .mask {
   position: relative;
   padding: 0;
@@ -81,8 +69,6 @@
 
 .titlelink {
   display: block;
-
-  /*  Set same font-size and line height  */
   font-size: 20px;
   line-height: 20px;
 
@@ -102,14 +88,11 @@
   position: relative;
   width: 35px;
   height: 35px;
-  /* background: #f8f8ff; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
-
-  /*  Remove overflow to see how it works　:) */
   overflow: hidden;
 }
 
@@ -128,14 +111,10 @@
   transform: translate(-40px);
 }
 
-/* Hover Action*/
-
-/* Move up two texts (20px = font-size) */
 .link:hover .link-container {
   transform: translateY(-20px);
 }
 
-/* Rotate texts a little bit */
 .link:hover .link-title1 {
   transform: rotate(20deg);
 }
@@ -144,7 +123,6 @@
   transform: rotate(0);
 }
 
-/* Move arrows to right */
 .link:hover .icon:first-child {
   transform: translate(40px);
 }
@@ -152,11 +130,8 @@
 .link:hover .icon:nth-child(2) {
   transform: translate(0px);
 }
- /* bbb */
-
  .r-link{
 	display: var(--rLinkDisplay, inline-flex) !important;
-  /* padding: 5px; */
   margin: 5px;
   font-size: 10px;
 }
@@ -167,15 +142,9 @@
 }
 
 .text-underlined{
-    /*
-        1. I use pixels units because others units (em, rem, vw, vh, etc) can
-        lead to the mistake of displaying a circumcised line
-    */
-
     --uiTextUnderlinedLineHeight: var(--textUnderlinedLineHeight, 2px); /* 1 */
     --uiTextUnderlinedLineGap: var(--textUnderlinedLineGap, .5rem);
     --uiTextUnderlinedPaddingBottom: calc(var(--uiTextUnderlinedLineHeight) + var(--uiTextUnderlinedLineGap));
-
     padding-bottom: var(--uiTextUnderlinedPaddingBottom) !important;
     position: var(--textUnderlinedPosition, relative) !important;
 		z-index: var(--textUnderlinedZindex, 1) !important;
@@ -186,18 +155,11 @@
     width: var(--textUnderlinedLineWidht, 100%) !important;
     height: var(--uiTextUnderlinedLineHeight) !important;
 		background-image: var(--textUnderlinedBackgroundImage, linear-gradient(to top, var(--textUnderlinedLineColor, currentColor) 30%, rgba(0, 0, 0, 0) 45%)) !important;
-
     position: absolute;
     left: var(--textUnderlinedLineLeft, 0) !important;
     bottom: var(--textUnderlinedLineBottom, 0) !important;
 		z-index: var(--textUnderlinedLineZindex, -1) !important;
 }
-
-/*
-=====
-CORE
-=====
-*/
 
 .linkbuy{
 	--textUnderlinedLineHeight: 100%;
@@ -222,10 +184,6 @@ CORE
 .linkbuy:hover::after{
 	transition-duration: .15s;
 }
-
-/*
-* These styles for text decoration. The demo will be work without it
-*/
 
 .linkbuy{
 	font-weight: 700;
